@@ -1,0 +1,97 @@
+import { makeStyles } from "@material-ui/styles";
+
+export const useStyles = makeStyles({
+  root: {
+    display: "flex",
+    flex: "1",
+    height: "100vh",
+  },
+  deleteBtn: {
+    position: "absolute",
+    right: "10px",
+    top: "10px",
+    textIndent: "-9999em",
+    border: "none",
+    backgroundColor: "transparent",
+    width: "20px",
+    height: "20px",
+    "&::before": {
+      content: `""`,
+      position: "absolute",
+      right: "0",
+      top: "50%",
+      width: "30px",
+      height: "1px",
+      backgroundColor: "#fff",
+      transform: "translateY(-50%) rotate(45deg)",
+      boxShadow: "rgba(0,0,0,0.3) 0px 0px 2px 1px",
+    },
+    "&::after": {
+      content: `""`,
+      position: "absolute",
+      right: "0",
+      top: "50%",
+      width: "30px",
+      height: "1px",
+      backgroundColor: "#fff",
+      transform: "translateY(-50%) rotate(-45deg)",
+      boxShadow: "rgba(0,0,0,0.3) 0px 0px 2px 1px",
+    },
+  },
+  toolBar: {
+    height: "100vh",
+    display: "inline-flex",
+    padding: "0 10px",
+    flexDirection: "column",
+    position: "fixed",
+    left: 0,
+    rowGap: 10,
+    // alignItems: "center",
+    // justifyContent: "center",
+    backgroundColor: "#ddd",
+    zIndex: 1,
+  },
+  container: {
+    position: "relative",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+  },
+  layerContainer: {
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+  },
+  layer: {
+    backgroundColor: "#fff",
+    // backgroundColor:'#000',
+    border: "1px solid #ddd",
+    height: "100%",
+    width: "100%",
+    maxWidth: "900px",
+    // margin:'0 auto',
+  },
+
+  // box: {
+  //   backgroundColor:'salmon',
+  //   width:'350px',
+  //   height:'350px',
+  //   borderRadius:'50%',
+  //   '&:before': {
+  //     content: `''`,
+  //     float: 'left',
+  //     height:`100%`,
+  //     width: '50%',
+  //     shapeOutside: `radial-gradient(farthest-side at right, transparent calc(100% - 15px), #fff 0)`
+  //   }
+  // },
+  // span: {
+  //   content: `''`,
+  //   float: 'left',
+  //   height:`100%`,
+  //   width: '50%',
+  //   shapeOutside: `radial-gradient(farthest-side at right, transparent calc(100% - 15px), #fff 0)`,
+  //   float: 'right',
+  //   shapeOutside: `radial-gradient(farthest-side at left,  transparent calc(100% - 15px), #fff 0)`,
+  // },
+});

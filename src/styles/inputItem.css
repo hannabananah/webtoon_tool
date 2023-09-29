@@ -1,0 +1,178 @@
+/* [contenteditable=true]:empty:before{ */
+.ta:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color : #999;
+}
+div[contenteditable=true] {
+  /* border: 1px solid #ddd; */
+  /* color : #333; */
+}
+
+
+/* from input.css */
+.label {
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+  background-color: #7c4dff;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.14);
+  border: none;
+}
+.label:hover {
+  background-color: #642ff7;
+}
+/* 말풍선 꼬리 아래쪽 */
+.speechBubbleB {
+  display: inline-block;
+  position: relative;
+  position: absolute;
+}
+.speechBubbleB:after,
+.speechBubbleB:before {
+  /* bottom: -26; */
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  transform: rotate(180deg) translateY(5px);
+}
+.speechBubbleB:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+.speechBubbleB:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #999;
+  border-width: 18px;
+  margin-left: -18px;
+}
+/* 말풍선 꼬리 왼쪽 */
+.speechBubbleL {
+  display: inline-block;
+  position: relative;
+  position: absolute;
+}
+.speechBubbleL:after,
+.speechBubbleL:before {
+  top: 50%;
+  left: 0;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.speechBubbleL:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 14px;
+  margin-top: -14px;
+}
+.speechBubbleL:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #999;
+  border-width: 15px;
+  margin-top: -15px;
+}
+/* 말풍선 꼬리 위쪽 */
+.speechBubbleT {
+  display: inline-block;
+  position: relative;
+  position: absolute;
+}
+.speechBubbleT:after,
+.speechBubbleT:before {
+  top: -32px;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(2.8px);
+}
+.speechBubbleT:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 18px;
+  margin-left: -18px;
+}
+.speechBubbleT:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #999;
+  border-width: 15px;
+  margin-left: -15px;
+}
+/* 말풍선 꼬리 오른쪽 */
+.speechBubbleR {
+  display: inline-block;
+  position: relative;
+  position: absolute;
+}
+.speechBubbleR:after,
+.speechBubbleR:before {
+  top: 50%;
+  left: 240px;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  /* transform: rotate(90deg); */
+}
+.speechBubbleR:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 13px;
+  margin-top: -13px;
+  margin-left: -18px;
+}
+.speechBubbleR:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #999;
+  border-width: 15px;
+  margin-top: -15px;
+}
+/* .bubble::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 12px solid;
+  box-sizing: border-box;
+  border-color: transparent transparent #000 transparent;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) rotate(45deg);
+  margin-left: 6px;
+  margin-top: -12px;
+}
+.bubble::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 11px solid;
+  box-sizing: border-box;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) rotate(45deg);
+  margin-left: 5.5px;
+  margin-top: -12px;
+} */

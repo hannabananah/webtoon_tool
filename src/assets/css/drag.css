@@ -1,0 +1,83 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  display: inline-block;
+  /* position: absolute; */
+}
+.box2 {
+  border-radius: 50%;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  background: #fff;
+  border: 2px solid #666;
+  color: #333;
+  display: flex;
+  padding: 50px;
+  position: relative;
+  text-align: center;
+  overflow-wrap: break-word;
+  resize: none;
+  outline: none !important;
+}
+.bubbleArrow {
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+/* .bubbleArrow:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 16px 20px 17.5px;
+  transform: rotate(200deg);
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  bottom: 3px;
+  left: 50.4px;
+} */
+.bubbleArrow:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  left: 60px;
+  right: 0;
+  bottom: 0px;
+  width: 14px;
+  height: 15px;
+  background: #fff;
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transform: rotate(60deg);
+}
+/* .bubbleArrow:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 16px 20px 17.5px;
+  transform: rotate(200deg);
+  border-color: #666 transparent;
+  display: block;
+  width: 0;
+  bottom: 0px;
+  left: 49px;
+} */
+
+.img {
+  display: block;
+  width: 100%;
+  -webkit-mask-image: url(https://mask-test-ck.s3.eu-west-1.amazonaws.com/castle_mask.jpg);
+  mask-image: url(https://mask-test-ck.s3.eu-west-1.amazonaws.com/castle_mask.jpg);
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  pointer-events: none;
+}
+/* .image {
+  cursor: grab !important;
+} */
